@@ -165,7 +165,7 @@ nano lxc_php5.6.dev
 
 
 ```
-cd .,/sites-enabled
+cd ../sites-enabled
 ls default
 ln -s /etc/nginx/sites-available/lxc_php5.6.dev
 nginx -t
@@ -230,7 +230,7 @@ edit lxc
 
 
 ```
-cd .,/sites-enabled
+cd ../sites-enabled
 ls 
 rm -r lxc_php5.6.dev
 ls 
@@ -268,7 +268,6 @@ curl -i http://lxc_landing.devTest dengan Curl
 ![32.PNG](https://github.com/nabill13/laprak-1-SAS/blob/main/32.PNG?raw=true) 
 
 ```
-
 Exit dari Ubuntu Landing
 ```
 5) Stop Ubuntu Landing dan cek 
