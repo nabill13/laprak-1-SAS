@@ -211,7 +211,7 @@ lxc-ls -f
 lxc-attach -n ubuntu_landing
 cd /etc/nginx/sites-available
 ```
-Renama direktore lxc agar tidak bingung
+Rename direktori lxc agar tidak bingung
 
 ls
 mv lxc_php5.6.dev lxc_landing.dev
@@ -359,13 +359,13 @@ curl -i http:vm.local/app
 ```
 - Mengapa untuk kebutuhan php5.6 tidak bisa menggunakan ubuntu 16.04, sehingga perlu diganti os ke debian 9?
 
-Karena ubuntu 16.04 hanya tersedia untuk opsi yang berbayar dan hanya dapat diakses ubuntu estended security maintenance yang berarti ubuntu 16.04 akan dihapus karena adanya pembaruan fitur yang bernama Trusty EOL yang tidak support kepada ubuntu 16.04
+Menurut kelompok kami karena ubuntu 16.04 hanya tersedia untuk opsi yang berbayar dan memiliki pembaharuan rutin yang berarti akan ketinggalan update terbaru, karena adanya pembaruan fitur baru yang tidak support maka ubuntu 16.04 bisa otomatis dihapus. 
 
  - Kenapa harus menggunakan virtualisasi LXC pada skema website yang akan didevelop?
 
-Karena LXC menggunakan file system yang netral, container dapat di fungsikan secara penuh oleh OS, data dapat disimpan di dalam maupun diluar container.
+Karena LXC menggunakan file system yang bersifat netral dan data dapat disimpan di dalam maupun diluar container, sehingga lebih memudahkan programmer.
 
 - Apa yang dimaksud dengan proxy server? kenapa vm.local bisa kita anggap sebagai proxy server?
 
-Proxy server bisa disebut computer sentral atau computer server yang bisa bertindak sebagai computer lainnya untuk yang dapat melakukan request content pada internet maupun intranet sama seperti vm.local. jadi vm.local bisa dikatakan juga sebagai proxy server
+Proxy server adalah sebuah sistem yang bekerja sebagai perantara jaringan, atau computer server yang dapat melakukan request content pada internet maupun intranet seperti vm.local. Maka dari itu vm.local bisa dikatakan juga sebagai proxy server karena memiliki kegunaan yang kurang lebih sama.
 
